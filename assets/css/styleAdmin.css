@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oswald:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.red{
+    text-align: center;
+    color: red;
+    margin-top: -5px;
+    font-size: 25px;
+}
+
+.bg-white{
+    background: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-30{
+    padding-top: 30px;
+}
+
+.inner{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+body{
+    background: #f8f8f8;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    background: #fff;
+}
+
+.title{
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo h1{
+    font-family: 'Titan One', cursive;
+    font-size: 40px;
+    color: crimson;
+    letter-spacing: 6px;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.menu li{
+    padding: 0 12px;
+}
+
+.menu li a:hover{
+    color: crimson;
+}
+
+.menu li .sub-menu{
+    position: relative;
+}
+
+.menu > .sub-menu:hover .drop-menu{
+    visibility: visible;
+    top: 60px;
+}
+
+.login{
+    background: darkturquoise;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.login:hover{
+    background: #2af598;
+    color: black;
+}
+
+.sign{
+    background: firebrick;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    min-width: 105px;
+}
+
+.sign:hover{
+    background: chartreuse;
+    color: black;
+}
+
+.drop-menu{
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+    visibility: hidden;
+    border: 1px solid #ccc;
+    width: 200px;
+    padding: 10px 0 10px 10px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.drop-menu li, .user-inffo li{
+    padding: 5px 0;
+}
+
+.menu li a{
+    font-weight: bold;
+}
+
+.others {
+    flex: 2.5;
+    display: flex;
+}
+
+.others li{
+    padding: 0 12px;
+}
+
+.others > li:first-child{
+    position: relative;
+}
+
+.others > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.others > li:first-child input:focus-visible{
+    outline: none;
+}
+
+.others > li:first-child i{
+    position: absolute;
+    right: 10px;
+}
+
+.header-hello {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* banner */
+.banner-img{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner-btn a{
+    padding: 10px 45px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 20px;
+    position: absolute;
+    right: 7%;
+    top: 37px;
+    animation: button 2s linear infinite;
+}
+
+@keyframes button {
+    50%{
+        background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    }
+    100%{
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    }
+}
+
+section#breadrum {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* admin */
+.main {
+    display: flex;
+}
+.name-book {
+    font-size: 18px;
+}
+
+.sub{
+    margin-right: 20px;
+    padding: 10px;
+}
+.left-main{
+    width: 20%;
+}
+.sub-nav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: bisque;
+    border-radius: 10px;
+    margin-top: 100px;
+
+}
+.content {
+    padding: 20px;
+}
+
+
+a.addsp {
+    padding: 10px;
+    background: orange;
+}
+input.name-sub {
+    border: unset;
+    background: unset;
+    text-align: left;
+}
+.content{
+    width: 100%;
+}
+
+/* cart */
+.category-nav {
+    margin-top: 20px;
+}
+
+.card-item, .category-nav {
+    display: flex;
+    background: #fff;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+.book-desc,.name-category {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    padding:20px 0 20px 20px;
+}
+
+.amount-category,.price-category,.act-category{
+    flex: 1 ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.amount{
+    width: 50px;
+    height: 30px;
+    margin: 0 5px;
+    padding: 0 18px;
+}
+
+.ship, .voucher{
+    padding: 10px 20px;
+    background: #fff;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+button.act--{
+    width: 20px;
+}
+
+.book-desc h3{
+    margin-left: 20px;
+}
+
+.book-desc img{
+    width: 140px;
+    height: 200px;
+}
+
+
+
+
+
